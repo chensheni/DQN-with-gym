@@ -19,6 +19,18 @@ conda activate dqnenv
 ```
 conda install python=3.11
 ```
-5.install flappy-bird-gymnasium
-
+5. install flappy-bird-gymnasium
+```
 pip install flappy-bird-gymnasium
+```
+6. install pytorch within the v env
+```
+conda install pytorch::pytorch torchvision torchaudio -c pytorch
+```
+
+
+python agent.py flappybird1 --train
+
+python agent.py flappybird1
+
+
