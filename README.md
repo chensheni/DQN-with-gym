@@ -1,7 +1,7 @@
 # DQN-with-gym
 
 This is the flappy bird game:
-https://github.com/markub3327/flappy-bird-gymnasium
+[https://github.com/markub3327/flappy-bird-gymnasium](https://github.com/robertoschiavone/flappy-bird-env)
 
 1. create vitual environment
 ```
@@ -27,10 +27,11 @@ pip install flappy-bird-gymnasium
 ```
 conda install pytorch::pytorch torchvision torchaudio -c pytorch
 ```
-
-
+7. train models
+```
 python agent.py flappybird1 --train
-
+```
+8. run trained models
+```
 python agent.py flappybird1
-
-
+```
