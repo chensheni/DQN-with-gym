@@ -1,0 +1,57 @@
+# parameter information
+# self.env_id               # registered env id
+# self.learning_rate_a      # learning rate (alpha)
+# self.discount_factor_g    # discount rate (gamma)
+# self.network_sync_rate    # number of steps the agent takes before syncing the policy and target network
+# self.replay_memory_size   # size of replay memory
+# self.mini_batch_size      # size of the training data set sampled from the replay memory
+# 
+# self.epsilon_init         # 1 = 100% random actions
+# self.epsilon_decay        # epsilon decay rate
+# self.epsilon_min          # minimum epsilon value
+# 
+# self.stop_on_reward       # stop training after reaching this number of rewards
+# self.hidden_nodes         # number of nodes from fc layers
+
+flappybird1:
+  env_id: FlappyBird-v0
+  replay_memory_size: 100000
+  mini_batch_size: 32
+  epsilon_init: 1
+  epsilon_decay: 0.99_99_5
+  epsilon_min: 0.05
+  network_sync_rate: 10
+  learning_rate_a: 0.0001
+  discount_factor_g: 0.99
+  stop_on_reward: 100000
+  fc1_nodes: 512
+  env_make_params:
+    use_lidar: False
+
+flappybird2:
+  env_id: FlappyBird-v0
+  replay_memory_size: 100000
+  mini_batch_size: 32
+  epsilon_init: 1
+  epsilon_decay: 0.99_99_5
+  epsilon_min: 0.05
+  network_sync_rate: 10
+  learning_rate_a: 0.0001
+  discount_factor_g: 0.99
+  stop_on_reward: 100000
+  fc1_nodes: 512
+  env_make_params:
+    use_lidar: False
+
+flappybird3:
+  env_id: FlappyBird-v0
+  replay_memory_size: 100000
+  mini_batch_size: 32
+  epsilon_init: 1
+  epsilon_decay: 0.99_99_5
+  epsilon_min: 0.05
+  network_sync_rate: 10
+  learning_rate_a: 0.0001
+  discount_factor_g: 0.99
+  stop_on_reward: 100000
+  hidden_nodes: 512
